@@ -2,11 +2,41 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Evented - AI Event Schedular for Google Calendar</title>
+  <title>Evented - AI Event Scheduler for Google Calendar</title>
 </head>
 <body>
   <h1>Welcome to Evented</h1>
-  <p>Evented is a Chrome Extension that helps you convert highlighted text into Google Calendar events using AI (OpenAI). Your data stays secure and local unless you authorize event creation with your Google Calendar.</p>
-  <p>This tool is currently in development and intended for limited use.</p>
+
+  <p>
+    <strong>Evented</strong> is a Chrome Extension that helps you convert highlighted text or manual input into fully structured Google Calendar events using AI (OpenAI). 
+    It reads event-like text (e.g. "Dinner at 7pm at John's") and schedules it automatically to your Google Calendar.
+  </p>
+
+  <h2>How it works</h2>
+  <ul>
+    <li>You can either highlight text on a webpage or manually type/paste it into the built-in textbox.</li>
+    <li>Click "Create Event" to send the input to OpenAI and generate an event.</li>
+    <li>If you’ve signed into Google, the event will be added directly to your Calendar.</li>
+  </ul>
+
+  <h2>Using Your Own OpenAI API Key</h2>
+  <p>
+    For privacy and to avoid sharing keys, you must use and pay for your own OpenAI API key.
+    <br>
+    1. Visit <a href="https://platform.openai.com/account/api-keys" target="_blank">OpenAI API Keys</a> to create a key.
+    <br>
+    2. Paste your key into the Settings section of the extension popup.
+    <br>
+    3. You can choose from the two supported GPT model (e.g. <code>gpt-3.5-turbo</code>, <code>gpt-4</code>).
+  </p>
+
+  <p>
+    You are responsible for any costs incurred. See full pricing here: 
+    <a href="https://openai.com/api/pricing" target="_blank">OpenAI Pricing</a>.
+  </p>
+
+  <p>
+    Evented never stores your API key or data externally. All processing happens locally in the extension, and event creation only occurs when you explicitly allow access to your Google Calendar.
+  </p>
 </body>
 </html>
