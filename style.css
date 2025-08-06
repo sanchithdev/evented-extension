@@ -1,0 +1,52 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #2f2834;
+  padding: 20px 24px;
+  display: flex;
+  align-items: center; /* vertical centering */
+  justify-content: space-between;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  height: 60px;
+  width: 60px;
+  margin-right: 16px;
+  vertical-align: middle;
+}
+
+.logo h1 {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 52px;
+  font-weight: 400; /* 312 is non-standard; use 400 for regular weight */
+  color: rgb(255, 157, 0);
+  margin: 0;
+  line-height: 1;
+}
+
+nav a {
+  margin-left: 20px;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+body > h1,
+body > h2,
+body > p,
+body > ul {
+  margin: 16px;
+}
