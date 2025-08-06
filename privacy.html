@@ -17,22 +17,54 @@
       <a href="terms.html">Terms of Service</a>
     </nav>
   </header>
-  <h1>Privacy Policy</h1>
-  <p><strong>Effective Date:</strong> Aug 2, 2025</p>
+  <div class="container">
+    <h1>Privacy Policy</h1>
+    <p><strong>Effective Date:</strong> August 6, 2025</p>
+    <h4>Data Handled</h4>
+    <ul>
+      <li><strong>User Input:</strong> Only the text you highlight or type is used to create events. It is sent to OpenAI only when you click "Create Event."</li>
+      <li><strong>API Key:</strong> Your personal OpenAI API key is stored only in your browser using Chrome’s <code>storage.local</code>. It is never sent anywhere else.</li>
+      <li><strong>Model Selection:</strong> Your chosen default AI model is also stored locally for convenience and not shared externally.</li>
+    </ul>
 
-  <p>Evented does not collect, store, or transmit personal data to any external server controlled by us.</p>
+    <h4>How Data Is Stored</h4>
+    <p>
+    All settings and preferences are saved in Chrome’s <code>storage.local</code>. This means everything is stored only on your device and never transmitted to any Evented-controlled backend. Nothing is synced to the cloud or shared with us.
+    </p>
 
-  <ul>
-    <li>Text you highlight or input stays local unless you explicitly submit it to the OpenAI API.</li>
-    <li>API keys and user preferences are securely stored using Chrome's <code>storage.local</code> API. This data never leaves your browser.</li>
-    <li>When you authorize access to Google Calendar, only the permissions required to create events are used. No other calendar data is read or stored.</li>
-    <li>Your Google account details are never stored or shared by Evented.</li>
-  </ul>
+    <h4>When Data Is Sent</h4>
+    <p>
+    When you click “Create Event,” the highlighted text is sent over a secure HTTPS connection to OpenAI for processing. If you have enabled Google Calendar access, Evented will create an event using Google’s Calendar API.
+    </p>
 
-  <p>This extension uses OpenAI’s API for natural language processing. Submitted content is sent to OpenAI for processing and is subject to OpenAI’s terms of service.</p>
+    <h4>Third-Party APIs</h4>
+    <ul>
+      <li><strong>OpenAI API</strong> – used to interpret your text into event details using the model you selected.</li>
+      <li><strong>Google Calendar API</strong> – used to create events on your behalf, only if you've authenticated with Google.</li>
+    </ul>
+    <p>
+    These services process your data as part of the functionality you choose to use. Please review their respective privacy policies to understand how they manage your data.
+    </p>
 
-  <p>We do not use cookies, analytics tools, or third-party trackers.</p>
+    <h4>Data Retention</h4>
+    <p>
+    Evented does not retain any input data on our side. The data sent to OpenAI is discarded after processing. Your API key and model choice stay locally stored until you delete or update them.
+    </p>
 
-  <p>If you have questions, contact us at: <a href="mailto:sanchith.dev@gmail.com">sanchith.dev@gmail.com</a></p>
+    <h4>User Control</h4>
+    <p>
+    You can update or remove your OpenAI API key and model settings at any time through the extension. You can also revoke Google Calendar access via your Google account settings or by signing out.
+    </p>
+
+    <h4>Changes to This Policy</h4>
+    <p>
+    If changes are made to this policy, they will be reflected here. It is recommend to check this page occasionally, especially if new features are introduced.
+    </p>
+
+    <p>By using Evented, you agree to and accept this privacy policy.</p>
+
+    <p>If you have questions, contact me at: <a href="mailto:sanchith.dev@gmail.com">sanchith.dev@gmail.com</a></p>
+    <br><br>
+  </div>
 </body>
 </html>

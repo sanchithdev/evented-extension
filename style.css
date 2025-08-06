@@ -17,6 +17,12 @@ header {
   align-items: center;
 }
 
+.container {
+  padding: 0 24px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
 .logo img {
   height: 60px;
   width: 60px;
