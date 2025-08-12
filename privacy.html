@@ -19,50 +19,68 @@
   </header>
   <div class="container">
     <h1>Privacy Policy</h1>
-    <p><strong>Effective Date:</strong> August 6, 2025</p>
-    <h4>Data Handled</h4>
+    <p><strong>Effective Date:</strong> August 11, 2025</p>
+
+    <h4>Data Collected and Handled</h4>
     <ul>
-      <li><strong>User Input:</strong> Only the text you highlight or type is used to create events. It is sent to OpenAI only when you click "Create Event."</li>
-      <li><strong>API Key:</strong> Your personal OpenAI API key is stored only in your browser using Chrome’s <code>storage.local</code>. It is never sent anywhere else.</li>
-      <li><strong>Model Selection:</strong> Your chosen default AI model is also stored locally for convenience and not shared externally.</li>
+      <li><strong>User Text Input:</strong> Only the text you highlight or type, and then submit by clicking the create button, is used to create events. </li>
+      <li><strong>Google User Data:</strong> If you sign in with Google, Evented uses only an authentication token and permission to insert new events into your primary calendar. This data is used solely to create events you request. It does not read or modify any existing events, nor access other calendar data.</li>
+      </li>
+      <li><strong>API Key:</strong> Your personal OpenAI API key that is used to interpret your highlighted or typed text into structured calendar event details (title, location, start/end time, etc.). </li>
+      <li><strong>Model Selection:</strong> Your chosen OpenAI model to process your input text into structured calendar event details.</li>
     </ul>
 
-    <h4>How Data Is Stored</h4>
+    <h4>Data Storage and Retention</h4>
     <p>
-    All settings and preferences are saved in Chrome’s <code>storage.local</code>. This means everything is stored only on your device and never transmitted to any Evented-controlled backend. Nothing is synced to the cloud or shared with us.
+      All settings, API keys, and model preferences are saved locally using Chrome’s <code>storage.local</code> until you remove (reset) them. No data is stored on Evented-controlled servers. Google authentication tokens are stored securely using Chrome Identity API and can be revoked at any time by signing out.
+      Input event data is held only temporarily in memory while processing your request, then discarded. 
     </p>
 
-    <h4>When Data Is Sent</h4>
-    <p>
-    When you click “Create Event,” the highlighted text is sent over a secure HTTPS connection to OpenAI for processing. If you have enabled Google Calendar access, Evented will create an event using Google’s Calendar API.
-    </p>
+  <h4>When and How Data Is Sent & Used</h4>
+  <ul>
+    <li>
+      <strong>OpenAI API:</strong> When you click the “Create” button, the highlighted or typed text is sent over a secure HTTPS connection to convert it into structured event details (title, location, start_time, end_time).
+    </li>
+    <li>
+      <strong>Google Calendar API:</strong> If signed in and access is granted, Evented sends the event details to your Google account’s primary calendar in standard Google Calendar format. No other calendar data is accessed or read.
+    </li>
+    <li>
+      <strong>Signed Out:</strong> If you are signed out, no Google Calendar API calls are made and no Google user data is accessed.
+    </li>
+  </ul>
 
-    <h4>Third-Party APIs</h4>
-    <ul>
-      <li><strong>OpenAI API</strong> – used to interpret your text into event details using the model you selected.</li>
-      <li><strong>Google Calendar API</strong> – used to create events on your behalf, only if you've authenticated with Google.</li>
+    <h4>Data Sharing and Disclosure</h4>
+    <p>
+      Evented does not sell, rent, or share your personal data with any third party for purposes other than processing your text input to create calendar events. Data is shared only with OpenAI (to interpret and structure your text input) and Google (to create Google Calendar events).
     </ul>
     <p>
-    These services process your data as part of the functionality you choose to use. Please review their respective privacy policies to understand how they manage your data.
+      Both OpenAI and Google handle your data under their respective privacy policies:
+      <a href="https://openai.com/privacy/" target="_blank">OpenAI Privacy Policy</a> and 
+      <a href="https://policies.google.com/privacy" target="_blank">Google Privacy Policy</a>.
     </p>
 
-    <h4>Data Retention</h4>
-    <p>
-    Evented does not retain any input data on our side. The data sent to OpenAI is discarded after processing. Your API key and model choice stay locally stored until you delete or update them.
-    </p>
+    <h4>Data Protection</h4>
+    <ul>
+      <li>All communication with external APIs uses secure HTTPS encryption.</li>
+      <li>OAuth 2.0 is used for Google authentication, ensuring tokens are securely handled.</li>
+      <li>Your API key is stored locally in Chrome and never transmitted to any external Evented-controlled server.</li>
+    </ul>
 
     <h4>User Control</h4>
     <p>
-    You can update or remove your OpenAI API key and model settings at any time through the extension. You can also revoke Google Calendar access via your Google account settings or by signing out.
+      You may:
     </p>
+    <ul>
+      <li>Remove or update (reset) your OpenAI API key and preferences from within the extension.</li>
+      <li>Sign out of Google from the extension at any time to revoke all Google Calendar access.</li>
+    </ul>
 
     <h4>Changes to This Policy</h4>
     <p>
-    If changes are made to this policy, they will be reflected here. It is recommend to check this page occasionally, especially if new features are introduced.
+      If changes are made to this policy, the “Effective Date” will be updated, and the revised version will be posted here. Please check this page periodically for updates.
     </p>
 
     <p>By using Evented, you agree to and accept this privacy policy.</p>
-
     <p>If you have questions, contact me at: <a href="mailto:sanchith.dev@gmail.com">sanchith.dev@gmail.com</a></p>
     <br><br>
   </div>
